@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+:root{
+    /*colors*/
+--purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+/*fonts*/
+--font-size:32px;
+--font-family:'Poppins';
+--font-weight-regular-italic:400;
+--font-weight-bold:700;
+--font-weight-extra-bold-italic:800;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:var(--Off-white);
+    display: grid;
+    place-items: center; 
+    position: relative;
+}
+.card{
+    font-family: var(--font-family);
+    height: 440px;
+    width: 550px;
+    background-color:var(--White) ;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+}
+#input{
+    display: flex;
+padding-top: 40px;
+color: var(--Smokey-grey);
+font-size: 0.7rem;
+font-weight: var(--font-weight-bold);
+}
+::placeholder{
+    color: var(--Smokey-grey);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.4rem;
+}
+.date-input{
+    height: 50px;
+     width: 110px;
+     border-radius: 5px;
+     border:solid 1.2px var(--Off-white);
+     margin-top: 5px;
+     font-family: var(--font-family);
+     font-size: 28px;
+     color: var(--Off-black);
+     padding-left: 13px;
+}
+.inputAge{
+    display: grid;
+    padding-left: 40px;
+    letter-spacing: 2px;
+}
+input:focus{
+    outline: 0;
+
+}
+#line{
+    width: 430px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    border-bottom: solid 2px var(--Off-white);
+    
+}
+#button{
+    border: solid 1px var(--purple);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--purple);
+    padding-left: 11px;
+    padding-top: 12px;
+    margin-left: 470px;
+    cursor: pointer;
+}
+#age{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-extra-bold-italic);
+    color: var(--Off-black);
+    font-size: 2rem;
+    line-height: 80px;
+    padding-left: 43px;
+}
+ span{
+    color: var(--purple);
+    margin-right: -5px;
+}
+p{
+    font-size: 4rem;
+}
+small{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular-italic);
+    visibility: hidden;
+    color: var(--Light-red);
+    font-size: 0.5rem;
+    padding-top: 5px;
+}
+.inputAge.error label{
+    color: var(--Light-red);
+}
+.inputAge.error input{
+    border-color: var(--Light-red);
+}
+.inputAge.error small{
+    visibility: visible;
+    
+}
+
+.inputAge.success label{
+    color: var(--Smokey-grey)
+}
+.inputAge.success input{
+    border-color: var(--Off-white);
+}
+@media   (max-width: 400px) {
+  #line{
+    width: 75vw;
+    margin-left: -13px;
+    margin-top: 30px;
+  }
+  #button{
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 40%;
+    z-index: 1;
+  }
+  .card{
+    width: 90vw;
+    height: 80vh;
+    border-bottom-right-radius: 100px;
+
+  }
+  #input{
+    display: flex;
+padding-top: 40px;
+color: var(--Smokey-grey);
+font-size: 0.7rem;
+font-weight: var(--font-weight-bold);
+margin-left: 5px;
+}
+::placeholder{
+    color: var(--Smokey-grey);
+    font-weight: var(--font-weight-bold);
+    font-size: 1rem;
+}
+.date-input{
+    height: 50px;
+     width: 87px;
+     font-size: 22px;
+}
+#day{
+    padding-left: 10px;
+}
+#month{
+    padding-left: 10px;
+}
+#year{
+    padding-left: 10px;
+}
+#age{
+    padding-top: 20px;
+    margin-top: 30px;
+}
+p{
+    font-size: 150%;
+}
+}
+    
