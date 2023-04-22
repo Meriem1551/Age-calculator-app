@@ -174,10 +174,12 @@ margin-left: 5px;
 }
 #age{
     padding-top: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 p{
-    font-size: 150%;
+    font-size: 130%;
+    margin-left: -15px;
+    
 }
 }
     
