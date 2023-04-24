@@ -141,7 +141,8 @@ small{
   }
   .card{
     width: 90vw;
-    height: 80vh;
+    /*height:80vh;*/
+    height: 500px;
     border-bottom-right-radius: 100px;
 
   }
